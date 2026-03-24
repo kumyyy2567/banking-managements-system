@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+{%block content %}
+<table class = "table-primary m-5 p-4 " border = "2">
+<center>
+
+    <tr>
+        <td>TransactionAmount</td>
+        <td>TransctionType</td>
+        <td>TransctionDate</td>
+    </tr>
+    {% for  t  in qs%}
+
+    <tr>
+        <td>{{t.tamt}}</td>
+        <td>{{t.type}}</td>
+        <td>{{t.tdate}}</td>
+    </tr>
+    </table>
+</center>
+{%endblock content %}
